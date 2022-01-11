@@ -1,0 +1,31 @@
+.navbarContainer {
+  margin: 0 auto;
+}
+
+.navbarList {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbarList > li {
+  margin-left: 50px;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.navlink {
+  text-decoration: none;
+}
+
+.navlink_active {
+  text-decoration: none;
+  color: rgb(206, 164, 146);
+}
+
+.navlink:hover {
+  color: rgb(206, 164, 146);
+  transition: 0.3s all;
+}

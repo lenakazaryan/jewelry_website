@@ -1,0 +1,52 @@
+.footerContainer {
+  padding: 80px;
+  background-color: #cea492;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer_active {
+  text-decoration: none;
+  color: black;
+}
+
+.footerList > li {
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: white;
+}
+
+.footerlink:hover {
+  color: black;
+  transition: 0.3s all;
+}
+
+.socialNetworkLinks{
+    align-items: flex-start;
+    flex-direction: row;
+    display: flex;
+}
+
+.socialNetworkLogo{
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+}
