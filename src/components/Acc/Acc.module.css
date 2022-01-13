@@ -1,0 +1,190 @@
+.AccMain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../assets/images/static/Quicksand-Light.ttf);
+  }
+.AccMain *{
+    font-family: myFirstFont ;
+}
+
+/* Styles row 1 */
+.row1{
+    margin-top: 100px;
+    display: flex;
+    width: 80%;
+    height: 800px;
+    justify-content:space-between;
+    
+}
+
+.row1_text{
+    width: 30%;
+    text-align: start;
+    padding-left: 100px;
+    padding-top: 300px;
+
+}
+.row1_photo{
+    position: relative;
+    background-image: url("../../assets/images/Meri2.png");
+    background-repeat: no-repeat;
+    background-size:800px;
+    background-position:center;
+    background-origin: border-box;
+    width: 50%;
+    height: 800px;
+    cursor: pointer;
+    transition: background-size 1s;
+    
+}
+.row1_photo:hover{
+    z-index: 2;
+    background-size: 900px;
+    
+}
+
+.Acc_row1_h1{
+    border-top: 1px solid gray;
+}
+
+/* Styles row 2 */
+
+.row2{
+    margin-top: 100px;
+    display: flex;
+    width: 80%;
+    height: 1300px;
+    justify-content:space-around;
+    
+}
+.row2_right{
+    width: 35%;
+    
+}
+.row2_left{
+    width: 35%;
+    text-align: start;
+}
+.row2_right_buttom{
+    text-align: start;
+    position: relative;
+    top:400px
+}
+.row2_photo1{
+    background: url("../../assets/images/Meri3.jpeg") no-repeat;
+    background-position:top;
+    width: 100%;
+    height: 600px;
+    background-size: 520px;
+    transition: background-size 1s;
+}
+.row2_photo1:hover{
+    background-size: 580px;
+    transition: background-size 1s;
+}
+
+.row2_photo2{
+    background: url("../../assets/images/Meri4.jpeg") no-repeat;
+    background-position:top;
+    width: 100%;
+    height: 600px;
+    background-size: 600px;
+    transition: background-size 1s;
+}
+.row2_photo2:hover{
+    background-size: 660px;
+    transition: background-size 1s;
+}
+/* Styles row 3 */
+.row3{
+ width: 900px;
+ margin-bottom: 100px;
+}
+
+/* Styles row 4 */
+
+.row4{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.row4>div{
+  width: 50%;
+  height: 100%;
+}
+.row4_left{
+    background-image: url(../../assets/images/inspired.jpeg);
+    width: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    background-position:center;
+}
+.row4_left:hover{
+    background-image: none;
+    background-color: rgb(136, 121, 94);
+}
+
+.row4_right{
+    background-image: url(../../assets/images/shop.png);
+    width: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    background-position:center;
+}
+.row4_right:hover{
+    background-image: none;
+    background-color: rgb(223, 191, 159);
+}
+
+.row4 span{
+    position: absolute;
+    top: 60%;
+    font-size: 30px;
+}
+.row4_right span{
+    color: black;
+}
+.row4_left span{
+    color: white;
+}
+
+
+.row4_right div{
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    background-image: url(../../assets/images/strelka_black.png);
+    background-size:100px;
+    width:100px;
+    height:100px;
+    z-index: 1;
+    
+}
+
+.row4_left div{
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    background-image: url(../../assets/images/strelka_white.png);
+    background-size:100px;
+    width:100px;
+    height:100px;
+    z-index: 1;
+}

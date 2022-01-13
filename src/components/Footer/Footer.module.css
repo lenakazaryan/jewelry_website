@@ -49,4 +49,8 @@
     width: 35px;
     height: 35px;
     margin-left: 15px;
+    opacity: 0.5;
+}
+.socialNetworkLogo:hover{
+    opacity: 1;
 }
