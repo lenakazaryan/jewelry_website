@@ -39,3 +39,15 @@ export const footerLinks = [
     name: "CONTACT US",
   },
 ];
+
+export const addingInformation = [
+  {
+    to: "policyprivacy",
+    name: "POLICY PRIVACY",
+  },
+
+  {
+    to: "termsconditions",
+    name: "TERMS CONDITIONS",
+  },
+]
