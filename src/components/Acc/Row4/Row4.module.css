@@ -1,0 +1,76 @@
+/* Styles row 4 */
+.row4{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.row4_left{
+    background-image: url("../../../assets/images/inspired.jpg");
+    width: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    background-position:center;
+}
+.row4_left:hover{
+    background-image: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.row4_right{
+    background-image: url("../../../assets/images/shop.jpg");
+    width: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    background-position:center;
+}
+.row4_right:hover{
+    background-image: none;
+    background-color: rgb(206, 164, 146);
+}
+
+.row4 span{
+    position: absolute;
+    top: 60%;
+    font-size: 30px;
+}
+.row4_right span{
+    color: black;
+}
+.row4_left span{
+    color: white;
+}
+
+
+.row4_right div{
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    background-image: url("../../../assets/images/strelka_black.png");
+    background-size:100%;
+    width:60px;
+    height:60px;
+    z-index: 1;
+    
+}
+
+.row4_left div{
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    background-image: url("../../../assets/images/strelka_white.png");
+    background-size:100%;
+    width:60px;
+    height:60px;
+    z-index: 1;
+}

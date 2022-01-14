@@ -1,0 +1,36 @@
+/* Styles row 1 */
+.row1{
+    margin-top: 100px;
+    display: flex;
+    height: 800px;
+    justify-content:space-between;
+    
+}
+
+.row1_text{
+    width: 30%;
+    text-align: start;
+    padding-left: 100px;
+    padding-top: 300px;
+
+}
+.row1_photo{
+    position: relative;
+    background: url("../../../assets/images/Acc_1.jpg") no-repeat center;
+    background-size:650px;
+    width: 50%;
+    height: 800px;
+    cursor: pointer;
+    transition: background-size 1s;
+    
+}
+.row1_photo:hover{
+    z-index: 2;
+    background-size: 750px;
+    width: 50%;
+    
+}
+
+.Acc_row1_h1{
+    border-top: 1px solid gray;
+}
