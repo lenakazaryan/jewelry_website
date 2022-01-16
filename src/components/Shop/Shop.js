@@ -19,35 +19,15 @@ function Shop() {
 
   return (
     <div className={styles.shopContainer}>
-      <span className={styles.line}></span>
       <p>Sort by : Recommended</p>
       <div className={styles.shopBlocksContainer}>
-        <div className={styles.categoryContainer}>
-         
-        <div className={styles.categoryContainerHeader}>
-        <button className={styles.shopCategories}>Categories</button>
-          <Dropdown Component={Categories} />
-        </div>
-
-          <div className={styles.shopCategoriesLine}></div>
-          {/* <div className={styles.shopCategoriesTypes}>
-            <div>
-              <input type="checkbox" id="bracelets" name="bracelets" />
-              <label htmlFor="bracelets">Bracelets</label>
-            </div>
-            <div>
-              <input type="checkbox" id="earrings" name="earrings" />
-              <label htmlFor="earrings">Earrings</label>
-            </div>
-            <div>
-              <input type="checkbox" id="necklaces" name="necklaces" />
-              <label htmlFor="necklaces">Necklaces</label>
-            </div>
-            <div>
-              <input type="checkbox" id="rings" name="rings" />
-              <label htmlFor="rings">Rings</label>
-            </div>
-          </div> */}
+        <div>
+          <div >
+            <Dropdown Component={Categories} title={"Categories"} />
+          </div>
+          <div>
+            <Dropdown Component={Categories} title={"Categories"} />
+          </div>
         </div>
         <div className={styles.shopItemsList}>
           {data.map((item) => {

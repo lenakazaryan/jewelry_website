@@ -1,4 +1,36 @@
-.arrowLogo{
+.arrowLogo {
   width: 20px;
   height: 20px;
+  display: inline-block;
+}
+
+.dropdownContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 0.5px;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.classToggle {
+  max-height: 0;
+  opacity: 0;
+  position: relative;
+  width: 100px;
+  overflow: hidden;
+  transition: ease-out all 0.3s;
+}
+
+.opened {
+  max-height: 200px;
+  opacity: 1;
+  transition: all ease-out 0.3s;
 }

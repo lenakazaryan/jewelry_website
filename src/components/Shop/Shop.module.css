@@ -30,34 +30,12 @@
   margin-top: 20px;
 }
 
-.line {
-  width: 68%;
-  height: 1px;
-  background-color: gray;
-  margin: 0 auto;
-  margin-top: 10px;
-  display: inline-block;
-}
-
 .shopBlocksContainer {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
 }
 
-.shopCategoriesLine {
-  width: 200px;
-  height: 1px;
-  background-color: black;
-}
-
 .shopCategories {
   text-align: start;
-}
-
-.categoryContainerHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
