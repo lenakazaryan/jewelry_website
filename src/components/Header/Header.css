@@ -1,0 +1,222 @@
+header {
+  padding: 15px 0 30px;
+}
+
+.header_top {
+  width: 100%;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_logo_container {
+width: 100px;
+height: 38px;
+}
+
+.main_logo_container img {
+width: 100%;
+height: 100%;
+}
+
+.header_middle {
+  width: 100%;
+  height: 20px;
+  padding: 0 50px;
+}
+
+.header_bucket_container {
+    height: 100%;
+    display: flex;        
+    justify-content: space-between;
+
+        align-items: center;
+}
+
+.header_bucket_image img {
+  width: 100%;
+  height: 100%;
+   object-fit: contain;
+}
+
+.header_bucket_counter {
+  width: 17px;
+  height: 17px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_bucket_counter span {
+font-size: 8.7px;
+}
+
+.main_nav {
+  background: #fff;
+  height: 28px;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_item {
+  padding: 0 25px 0 0;
+  font-family: Lato;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  transition: color 150ms ease;
+}
+
+.nav_item.active {
+  color: #cea492;
+}
+
+.nav_item:hover {
+  color: #cea492;
+  background: none !important;
+}
+
+.main_bar_btn {
+  margin: 0 !important;
+}
+
+.main_bar_btn i {
+  font-size: 35px !important;
+}
+
+.main_sidenav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_bucket_modal {
+  min-height: 500px !important;
+  font-family: 'Lato' !important;
+}
+
+.bucket_modal_bottom {
+  border-top: 1px solid #e6e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bucket_modal_title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  padding-bottom: 15px;
+  font-family: 'Lato';
+}
+
+.bucket_product_count_container {
+  font-family: 'Lato';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bucket_product_count {
+  color: #cea492;
+  font-size: 17px;
+  padding: 0 2px;
+  font-family: 'Playfair Display';
+}
+
+.bucket_increase_btn,
+.bucket_decrease_btn {
+  font-size: 8px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.bucket_product_delete_icon {
+  cursor: pointer;
+  color: #666666;
+  transition: .3s;
+}
+
+.bucket_product_delete_icon:hover {
+  color: #66666690;
+  transition: color 150ms ease;
+}
+
+.bucket_modal_bottom {
+  font-weight: 900;
+}
+
+.bucket_browse_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bucket_browse_btn {
+  width: 150px;
+  background: transparent;
+  border: 1px solid #000;
+  padding: 5px 20px;
+  color: #000;
+  margin: 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: block;
+}
+
+.bucket_browse_btn:hover {
+  background: #e6e5e5;
+}
+
+.bucket_product_image {
+  width: 56px;
+  height: 56px;
+}
+
+.bucket_product_image img {
+  width: 100%;
+  height: 100%;
+   object-fit: cover;
+}
+
+.bucket_product {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 15px 0;
+}
+
+.bucket_product_count_container {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.bucket_product_count_container,
+.bucket_product_name {
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 992px) {
+  .bucket_product {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .bucket_product_image_container {
+    grid-row: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bucket_product_image_container {
+    display: none;
+  }
+}
