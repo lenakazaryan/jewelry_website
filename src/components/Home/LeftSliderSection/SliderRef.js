@@ -1,6 +1,7 @@
 import React from 'react';
 import './SliderRef.css'
 import { leftSideSlider } from '../../../helpers/constants';
+import {Link} from 'react-router-dom';
 
 function References() {
 
@@ -37,13 +38,13 @@ function References() {
                     </div>
                 </div>
             </div>
-            <a href="#" class="main_ref_page main_ref_first">
+            <Link to='/inspiration' href="#" class="main_ref_page main_ref_first">
                 <div class="main_ref_image_container">
                     <img src="https://static.ucraft.net/fs/ucraft/userFiles/preview-acc/images/78-alve-odonnell-607078-unsplash-anf1.jpg?v=1579013170" alt="ref image" />
                 </div>
                 <span class="main_ref_page_title white-text">Inspiration</span>
                 <span class="ref_page_arrow white-text">  <i class="material-icons ref_arrow_icon">arrow_downward</i></span>
-            </a>
+            </Link>
         </div>
     </section>
     )

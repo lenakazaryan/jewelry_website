@@ -1,8 +1,8 @@
 import bucket from '../../assets/images/bucket.png';
 import './Header.css';
+import {Link} from 'react-router-dom';
 
-
-function Header() {``
+function Header() {
     const M = window.M;
     document.addEventListener('DOMContentLoaded', function() {
         const modals = document.querySelectorAll('.modal');
@@ -12,11 +12,11 @@ function Header() {``
     return ( 
         <header className="white">
             <div className="header_top">
-                <a href="#">
+                <Link to='/'>
                     <div className="main_logo_container">
                         <img src="https://static.ucraft.net/fs/ucraft/userFiles/preview-acc/images/logo.png?v=1579013171" alt="logo"/>
                     </div>
-                </a>
+                </Link>
             </div>
 
             <div className="header_middle">
@@ -31,9 +31,9 @@ function Header() {``
             </div>
             
             <div id="main_bucket_modal" className="modal">
-                <a href="#!" className="modal-close modal_close_btn waves-effect black-text">
+                <div className="modal-close modal_close_btn waves-effect black-text">
                     <i className="material-icons">close</i>
-                </a>
+                </div>
                 <div className="modal-content row">
                     <div className="col s12">
                         <h4 className="bucket_modal_title">Shopping cart</h4>
