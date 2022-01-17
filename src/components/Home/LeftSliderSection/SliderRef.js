@@ -1,23 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './SliderRef.css'
 import { leftSideSlider } from '../../../helpers/constants';
 import {Link} from 'react-router-dom';
 
 function References() {
 
-    const M = window.M;
-    document.addEventListener('DOMContentLoaded', function() {
+    useEffect(()=>{
+        const M = window.M;
         const ref_left_carousel = document.querySelectorAll('.ref_left_carousel');
         const left_carousel_instances = M.Carousel.init(ref_left_carousel, {
             'fullWidth': true,
         });
-
-        setInterval(() => {
-            const left_carousel_item = document.querySelector(".ref_left_carousel");
-            const left_next = M.Carousel.getInstance(left_carousel_item);
+        
+        const left_carousel_item = document.querySelector(".ref_left_carousel");
+        const left_next = M.Carousel.getInstance(left_carousel_item);
+        const leftSideCarouselId = setInterval(() => {
             left_next.next(1);
         }, 1000);
-    })
+
+    }, [])
+
 
 
     return (

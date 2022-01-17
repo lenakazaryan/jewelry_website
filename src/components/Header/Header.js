@@ -1,12 +1,13 @@
+import { useEffect } from 'react';
 import bucket from '../../assets/images/bucket.png';
 import './Header.css';
 import {Link} from 'react-router-dom';
 
 function Header() {
-    const M = window.M;
-    document.addEventListener('DOMContentLoaded', function() {
+    useEffect(()=>{
+        const M = window.M;
         const modals = document.querySelectorAll('.modal');
-        const instances = M.Modal.init(modals, {});
+        const instances = M.Modal.init(modals, {})
     })
 
     return ( 

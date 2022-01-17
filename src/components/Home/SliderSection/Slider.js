@@ -1,23 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Slider.css';
 import {sliderImages} from '../../../helpers/constants';
 
 function Slider() {
-    const M = window.M;
-    document.addEventListener('DOMContentLoaded', function() {
+    useEffect(()=>{
+        const M = window.M;
         const carousels = document.querySelectorAll('.main_carousel');
         const carousel_instances = M.Carousel.init(carousels, {
             'fullWidth': true,
             indicators: true
         });
-    
+
+        const el = document.querySelector(".main_carousel");
+        const l = M.Carousel.getInstance(el);    
         setInterval(() => {
-            const el = document.querySelector(".main_carousel");
-            const l = M.Carousel.getInstance(el);
             l.next(1);
         }, 3000);
-      });
-
+    }, [])
 
     return (
         <section class="main_slider_section">
