@@ -22,7 +22,7 @@ function Footer() {
           <img className={styles.socialNetworkLogo} src={linkdinlogo} />
         </div>
       </div>
-      <div>
+      <div className={styles.leftPudding}>
         <p>Useful</p>
         <ul className={styles.footerList}>
           {footerLinks.map((link) => {
@@ -61,9 +61,9 @@ function Footer() {
           })}
         </ul>
       </div>
-      <div>
+      <div className={styles.leftPudding}>
         <p>Customer photos</p>
-        <div>
+        <div >
           <div>
             <img
               className={styles.costumerPhoto}

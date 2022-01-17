@@ -1,10 +1,10 @@
 /* Styles row 4 */
 .row4{
-    width: 80%;
-    height: 600px;
+    width: 100%;
+    height: 650px;
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 200px
 }
 
 .row4_left{
@@ -54,23 +54,24 @@
 
 .row4_right div{
     position: absolute;
-    left: 10%;
-    top: 80%;
+    left: 4%;
+    top: 86%;
     background-image: url("../../../assets/images/strelka_black.png");
-    background-size:100%;
-    width:60px;
-    height:60px;
+    background-size: 105%;
+    width: 65px;
+    height: 65px;
     z-index: 1;
     
 }
 
+
 .row4_left div{
     position: absolute;
-    left: 10%;
-    top: 80%;
+    left: 4%;
+    top: 86%;
     background-image: url("../../../assets/images/strelka_white.png");
-    background-size:100%;
-    width:60px;
-    height:60px;
+    background-size: 105%;
+    width: 65px;
+    height: 65px;
     z-index: 1;
 }
