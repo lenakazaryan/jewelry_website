@@ -1,5 +1,5 @@
 import React from 'react';
-import './References.css'
+import './SliderRef.css'
 import { leftSideSlider } from '../../../helpers/constants';
 
 function References() {

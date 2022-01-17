@@ -1,17 +1,21 @@
 import'./Home.css';
 import Slider from './SliderSection/Slider';
+import SliderRef from './LeftSliderSection/SliderRef';
 import Products from './ProductSection/Products';
+import References from './References/References';
 import { bestSellerProducts } from '../../helpers/constants';
 import { popularProducts } from '../../helpers/constants';
-import References from './RefSection/References';
+
+
 
 function Home() {
   return (
     <>
       <Slider />
       <Products title="Popular Products" productList={popularProducts}/>
-      <References />
+      <SliderRef />
       <Products title="Best Sellers" productList={bestSellerProducts}/>
+      <References />
     </>
 
   )

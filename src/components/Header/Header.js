@@ -2,7 +2,7 @@ import bucket from '../../assets/images/bucket.png';
 import './Header.css';
 
 
-function Header() {
+function Header() {``
     const M = window.M;
     document.addEventListener('DOMContentLoaded', function() {
         const modals = document.querySelectorAll('.modal');
@@ -46,7 +46,7 @@ function Header() {
                                     </div>
                                 </div>
                                 <div className="bucket_product_name">
-                                    <p>Chic yellow gold toggle necklace</p>
+                                    <p className='left'>Chic yellow gold toggle necklace</p>
                                 </div>
                                 <div className="bucket_product_delete_icon">
                                     <i className="material-icons right">close</i>
@@ -68,7 +68,7 @@ function Header() {
                                     </div>
                                 </div>
                                 <div className="bucket_product_name">
-                                    <p>Chic yellow gold toggle necklace</p>
+                                    <p className='left'>Chic yellow gold toggle necklace</p>
                                 </div>
                                 <div className="bucket_product_delete_icon">
                                     <i className="material-icons right">close</i>
@@ -86,13 +86,13 @@ function Header() {
                         </div>
                         <div className="bucket_modal_bottom row">
                             <div className="col s6">
-                                <h6 className="bold">TOTAL</h6>
+                                <h6 className="bold left">TOTAL</h6>
                             </div>
                             <div className="col s6">
                                 <p className="right bold"><span>$</span> <span>400.00</span></p>
                             </div>
                         </div>
-                        <p>Looking for more? <a href="#" className="main_link">Continue shopping</a></p>
+                        <p className='left'>Looking for more? <a href="#" className="main_link">Continue shopping</a></p>
                     </div>
                 </div>
             </div>            
