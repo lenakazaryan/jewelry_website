@@ -13,7 +13,10 @@ function Dropdown({ Component, title }) {
     <>
       <div onClick={toggle} className={styles.dropdownContainer}>
         <p>{title}</p>
-        <img className={styles.arrowLogo} src={arrowLogo} />
+        <img
+          className={`${styles.arrowLogo} ${isOpen && styles.logoRotate}`}
+          src={arrowLogo}
+        />
       </div>
       <div className={`${styles.classToggle} ${isOpen && styles.opened}`}>
         <span className={styles.line}></span>
