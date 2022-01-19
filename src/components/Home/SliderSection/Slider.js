@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import './Slider.css';
 import {sliderImages} from '../../../helpers/constants';
 
@@ -23,11 +24,11 @@ function Slider() {
         <div class="main_slider_container">
             <div class="carousel carousel-slider main_carousel">
                 {sliderImages.map((image, index) =>{
-                    return <a key={index} href="#" class="carousel-item main_carousel_item">
+                    return <Link to='/shop' key={index} href="#" class="carousel-item main_carousel_item">
                         <div class="main_carousel_image_container">
                             <img class="materialboxed  materialboxed_image_cursor" src={image} alt='slider image' />
                         </div>
-                    </a>
+                    </Link>
                 })}
             </div>
         </div>

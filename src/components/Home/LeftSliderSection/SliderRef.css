@@ -44,7 +44,7 @@
     opacity: 1;
   }
   
-  .main_ref_first:hover .main_ref_image_container {
+  .main_ref_scaled_img:hover .main_ref_image_container {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }

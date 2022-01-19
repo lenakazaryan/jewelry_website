@@ -1,7 +1,9 @@
 import React, {useEffect} from 'react';
 import './SliderRef.css'
 import { leftSideSlider } from '../../../helpers/constants';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
+import LinkedImageCard from '../../ImageCards/LinkedImageCard';
+import imageInfo from './data';
 
 function References() {
 
@@ -19,8 +21,6 @@ function References() {
         }, 1000);
 
     }, [])
-
-
 
     return (
         <section>
@@ -40,13 +40,7 @@ function References() {
                     </div>
                 </div>
             </div>
-            <Link to='/inspiration' href="#" class="main_ref_page main_ref_first">
-                <div class="main_ref_image_container">
-                    <img src="https://static.ucraft.net/fs/ucraft/userFiles/preview-acc/images/78-alve-odonnell-607078-unsplash-anf1.jpg?v=1579013170" alt="ref image" />
-                </div>
-                <span class="main_ref_page_title white-text">Inspiration</span>
-                <span class="ref_page_arrow white-text">  <i class="material-icons ref_arrow_icon">arrow_downward</i></span>
-            </Link>
+            <LinkedImageCard {...imageInfo} />
         </div>
     </section>
     )
