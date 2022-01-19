@@ -1,6 +1,5 @@
-import'./Home.css';
 import Slider from './SliderSection/Slider';
-import SliderRef from './LeftSliderSection/SliderRef';
+import SmallSliderSection from './SmallSliderSection/SmallSliderSection';
 import Products from './ProductSection/Products';
 import LinkedImgSection from './LinkedImgSection/LinkedImgSection';
 import { bestSellerProducts } from '../../helpers/constants';
@@ -13,11 +12,10 @@ function Home() {
     <>
       <Slider />
       <Products title="Popular Products" productList={popularProducts}/>
-      <SliderRef />
+      <SmallSliderSection />
       <Products title="Best Sellers" productList={bestSellerProducts}/>
       <LinkedImgSection  />
     </>
-
   )
 }
 
