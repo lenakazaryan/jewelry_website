@@ -1,0 +1,30 @@
+.line{
+    width: 68%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.textContainer > span{
+    display:inline-block;
+    margin: 30px;
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+}
+
+.textContainer > p{
+    font-size: 22px;
+    text-align: start;
+    margin: 30px;
+}
+
+.textContainer{
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.list{
+text-align: start;
+}

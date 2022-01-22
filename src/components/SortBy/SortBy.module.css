@@ -1,0 +1,15 @@
+.listContainer{
+    /* display: block; */
+    position: absolute;
+    /* max-height: 0; */
+  /* opacity: 0; */
+ 
+  /* overflow: hidden; */
+  transition: ease-out 1s;
+  transition-delay: 1s;
+}
+
+.listContainer > li{
+    list-style-type: none;
+}
+
