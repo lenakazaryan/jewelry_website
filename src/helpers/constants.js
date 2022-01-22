@@ -80,7 +80,6 @@ export const popularProducts = [
   },
 ]
 
-
 export const bestSellerProducts = [
   {
     id: 1,
