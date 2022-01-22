@@ -1,0 +1,12 @@
+/* .price{
+    background-color: black;
+    font-size: 50px;
+    color: black;
+} */
+
+.price[type=range] {
+    background-color: black;
+    font-size: 50px;
+    color: black;
+
+}

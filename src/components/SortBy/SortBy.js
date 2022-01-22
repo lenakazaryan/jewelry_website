@@ -1,7 +1,7 @@
 import styles from "../SortBy/SortBy.module.css";
 // import logo from "../../assets/images/fb.png";
 
-function SortBy({ component, style }) {
+function SortBy({ style }) {
   return (
     <div style={style}>
       <ul className={styles.listContainer}>
