@@ -1,15 +1,12 @@
-import { useState } from "react";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import Home from "../Home/Home";
-import Acc from "../Acc/Acc";
-import Shop from "../Shop/Shop";
-import Inspiration from "../Inspiration/Inspiration";
-import ContactUs from "../ContactUs/ContactUs";
 import { navLinks } from "../../helpers/constants";
+import { useDispatch, useSelector } from "react-redux";
+import { routeAction } from "../redux/action";
 
 function Navbar() {
-  const [activeTab, setActiveTab] = useState("HOME");
+  const {route} = useSelector(({routeReducer}) => routeReducer);
+  const dispatch = useDispatch();
 
   return (
     <div className={styles.navbarContainer}>
@@ -17,10 +14,13 @@ function Navbar() {
         {navLinks.map(link => {
           const {name, to } = link
           return (
-            <li key={name} onClick={() => setActiveTab(name)}>
+            <li
+              key={name}
+              onClick={() => dispatch(routeAction(name))}
+            >
               <NavLink
                 className={
-                  activeTab === link.name
+                  route === link.name
                     ? styles.navlink_active
                     : styles.navlink
                 }
@@ -32,14 +32,6 @@ function Navbar() {
           );
         })}
       </ul>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/acc" element={<Acc />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/inspiration" element={<Inspiration />} />
-        <Route path="/contactus" element={<ContactUs />} />
-      </Routes>
     </div>
   );
 }

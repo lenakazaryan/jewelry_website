@@ -1,0 +1,49 @@
+.addingInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.addingInformationElement {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footerlink:hover {
+    color: black;
+    transition: 0.3s all;
+}
+
+.line{
+    width: 68%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.textContainer > span{
+    display:inline-block;
+    margin: 30px;
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+}
+
+.textContainer > p{
+    font-size: 22px;
+    text-align: start;
+    margin: 30px;
+}
+
+.textContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,17 @@
+.listContainer {
+  position: absolute;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* transition: height 2s; */
+  transition: 0.3s;
+}
+
+.listContainer > li {
+  list-style-type: none;
+}
+
+.listContainer:hover {
+  height: 300px;
+}
