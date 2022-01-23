@@ -11,11 +11,12 @@ function Navbar() {
   return (
     <div className={styles.navbarContainer}>
       <ul className={styles.navbarList}>
-        {navLinks.map((link) => {
+        {navLinks.map(link => {
+          const {name, to } = link
           return (
             <li
-              key={link.name}
-              onClick={() => dispatch(routeAction(link.name))}
+              key={name}
+              onClick={() => dispatch(routeAction(name))}
             >
               <NavLink
                 className={
@@ -23,9 +24,9 @@ function Navbar() {
                     ? styles.navlink_active
                     : styles.navlink
                 }
-                to={link.to}
+                to={to}
               >
-                {link.name}
+                {name}
               </NavLink>
             </li>
           );
