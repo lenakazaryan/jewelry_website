@@ -12,7 +12,7 @@ function Products({title, productList}){
                   </h3>
               </div>
               <div className="main_product_list">
-                {productList.map(product => <ProductCard {...product} />)}
+                {productList.map(product => <ProductCard key = {product.id} {...product} />)}
               </div>
           </div>
       </section>

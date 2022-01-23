@@ -7,7 +7,7 @@ function Slider() {
     useEffect(()=>{
         const M = window.M;
         const carousels = document.querySelectorAll('.main_carousel');
-        const carousel_instances = M.Carousel.init(carousels, {
+        M.Carousel.init(carousels, {
             'fullWidth': true,
             indicators: true
         });
@@ -20,13 +20,13 @@ function Slider() {
     }, [])
 
     return (
-        <section class="main_slider_section">
-        <div class="main_slider_container">
-            <div class="carousel carousel-slider main_carousel">
+        <section className="main_slider_section">
+        <div className="main_slider_container">
+            <div className="carousel carousel-slider main_carousel">
                 {sliderImages.map((image, index) =>{
-                    return <Link to='/shop' key={index} href="#" class="carousel-item main_carousel_item">
-                        <div class="main_carousel_image_container">
-                            <img class="materialboxed  materialboxed_image_cursor" src={image} alt='slider image' />
+                    return <Link to='/shop' key={index} href="#" className="carousel-item main_carousel_item">
+                        <div className="main_carousel_image_container">
+                            <img className="materialboxed  materialboxed_image_cursor" src={image} alt='slider image' />
                         </div>
                     </Link>
                 })}

@@ -1,9 +1,9 @@
 import React from 'react';
 import './ProductCard.css';
 
-function ProductCard({id, name, image, price}) {
+function ProductCard({name, image, price}) {
   return (
-    <article key={id} className="main_product_card">
+    <article className="main_product_card">
         <a href="#" className="main_product_card_container">
             <div className="main_product_image_container">
                 <img src={image} alt={name} />
