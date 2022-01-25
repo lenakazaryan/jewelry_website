@@ -2,7 +2,11 @@ import styles from "../Search/Search.module.css";
 import logo from "../../assets/images/fb.png";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { getJewelryAction, searchJewelryAction } from "../redux/action";
+import {
+  getJewelryAction,
+  searchJewelryAction,
+  setFilterValue,
+} from "../redux/action";
 import { useDebounce } from "../hooks/useDebounce";
 
 function Search() {
@@ -14,7 +18,7 @@ function Search() {
   const [searchValue, setSearchValue] = useState("");
   const [filtredElement, setFiltredElement] = useState([]);
   const dispatch = useDispatch();
-   
+
   const changeHandler = (e) => {
     setSearchValue(e.target.value);
     const filtredElement = jewelryData.filter((item) =>
@@ -28,11 +32,11 @@ function Search() {
   useEffect(() => {
     console.log(filtredElement, "P");
     if (searchValue.length > 0) {
-      dispatch(searchJewelryAction(debouncedSearchTerm));
-    } else if (searchValue === "") {
-      console.log(jewelryData, "j");
-      dispatch(getJewelryAction());
+      dispatch(setFilterValue(searchValue));
     }
+    // else if (searchValue === "") {
+    //   dispatch(getJewelryAction());
+    // }
   }, [debouncedSearchTerm]);
 
   return (

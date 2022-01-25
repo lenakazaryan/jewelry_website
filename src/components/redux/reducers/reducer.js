@@ -1,7 +1,13 @@
-import { GET_JEWELRY, SEARCH_JEWELRY, FILTER_JEWELRY} from "../actionType";
+import {
+  GET_JEWELRY,
+  SEARCH_JEWELRY,
+  FILTER_JEWELRY,
+  SET_FILTER_VALUE,
+} from "../actionType";
 
 const initialState = {
-  jewelry: null,
+  jewelry: [],
+  filteredJewelry: [],
   filters: [],
 };
 
@@ -19,8 +25,14 @@ export const jewelryReducer = (state = initialState, { type, payload }) => {
         jewelry: payload,
       };
 
-      case FILTER_JEWELRY:
-      state.filters.push(payload)
+    case FILTER_JEWELRY:
+      state.filters.push(payload);
+      return {
+        ...state,
+      };
+
+    case SET_FILTER_VALUE:
+      
       return {
         ...state,
       };
