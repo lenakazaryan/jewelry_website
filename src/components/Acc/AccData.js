@@ -15,4 +15,23 @@ const descCardArray = [
     }
 ]
 
+export const imagesInfo = [
+    {
+        image: 'https://static.ucraft.net/fs/ucraft/userFiles/preview-acc/images/056756781137-wen.jpg?v=1579013164', 
+        title: 'Get Inspired',
+        textColor: 'black-text',
+        backgroundLayer: 'linked_img_pink_layer',
+        link: '/inspiration',
+        hoverEffect: 'linked_img_changing_background',
+    },
+    {        
+        image:'https://static.ucraft.net/fs/ucraft/userFiles/preview-acc/images/0413821428136-bbb.jpg?v=1579013164',
+        title:'Shop now',
+        textColor :'white-text',
+        backgroundLayer : 'linked_img_black_layer',
+        link:'/shop',
+        hoverEffect : 'linked_img_changing_background'
+    }
+]
+
 export default descCardArray;

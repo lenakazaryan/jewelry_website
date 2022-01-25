@@ -6,6 +6,7 @@
     height: 100%;
     margin: auto;
     font-family: myFirstFont ;
+    padding-bottom: 50px;
     
 }
 
@@ -14,7 +15,12 @@
     src: url(../../assets/images/static/Quicksand-Light.ttf);
   }
 
-h1{
-    width: 67%;
+  h3{
+    width: 66%;
     margin-bottom: 150px;
+    font-size: 32px !important;
+}
+
+h1{
+    font-size: 40px !important;
 }

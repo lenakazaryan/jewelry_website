@@ -7,7 +7,7 @@
 }
 
 .headerAcc_text{
-    width: 30%;
+    width: 40%;
     text-align: start;
     padding-left: 100px;
     padding-top: 300px;
@@ -17,7 +17,7 @@
     position: relative;
     background: url("../../../assets/images/Acc_1.jpg") no-repeat center;
     background-size:650px;
-    width: 50%;
+    width: 46%;
     height: 800px;
     cursor: pointer;
     transition: background-size 1s;
@@ -26,7 +26,7 @@
 .headerAcc_photo:hover{
     z-index: 2;
     background-size: 750px;
-    width: 50%;
+    width: 46%;
     
 }
 

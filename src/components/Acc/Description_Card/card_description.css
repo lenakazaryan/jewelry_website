@@ -4,9 +4,9 @@
 }
 
 .acc{
-    margin-top: 100px;
+    margin-top: 50px;
    display: flex;
-   height: 1200px;
+   height: 1150px;
    justify-content: space-around;
    padding: 0px 120px 0px;
    width: inherit;
@@ -34,6 +34,6 @@
 
 
 .history_right_image{
-   margin-top: 450px;
+   margin-top: 350px;
 }
 
