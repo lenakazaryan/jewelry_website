@@ -1,15 +1,15 @@
-import styles from "./Acc.module.css";
-import Row1 from "./Row1/Row1";
-import Row2 from "./Row2/Row2";
-import Row3 from "./Row3/Row3";
-import Row4 from "./Row4/Row4";
+import  "./Acc.css";
+import HaederAcc from "./HeaderAcc/HaederAccSection";
+import DescCard from "./Description_Card/card_description";
+import descCardArray from "./AccData"
+
 function Acc() {
+  
   return (
-      <div className={styles.AccMain}>
-          <Row1 />  
-          <Row2 />
-          <Row3 />
-          <Row4 />
+      <div className = "AccMain">
+          <HaederAcc />  
+          <DescCard data = {descCardArray}/>
+          <h1>We want to give every woman the means to style her own look with our small decorative items of personal adornment: brooches, rings, necklaces, earrings, pendants, cufflinks, and bracelets.</h1>
       </div>
   )
 }

@@ -5,12 +5,16 @@
     width: 1300px;
     height: 100%;
     margin: auto;
+    font-family: myFirstFont ;
+    
 }
 
 @font-face {
     font-family: myFirstFont;
     src: url(../../assets/images/static/Quicksand-Light.ttf);
   }
-.AccMain *{
-    font-family: myFirstFont ;
+
+h1{
+    width: 67%;
+    margin-bottom: 150px;
 }

@@ -1,5 +1,4 @@
-/* Styles row 1 */
-.row1{
+.headerAcc{
     margin-top: 100px;
     display: flex;
     height: 800px;
@@ -7,14 +6,14 @@
     
 }
 
-.row1_text{
+.headerAcc_text{
     width: 30%;
     text-align: start;
     padding-left: 100px;
     padding-top: 300px;
 
 }
-.row1_photo{
+.headerAcc_photo{
     position: relative;
     background: url("../../../assets/images/Acc_1.jpg") no-repeat center;
     background-size:650px;
@@ -24,13 +23,13 @@
     transition: background-size 1s;
     
 }
-.row1_photo:hover{
+.headerAcc_photo:hover{
     z-index: 2;
     background-size: 750px;
     width: 50%;
     
 }
 
-.Acc_row1_h1{
+.Acc_headerAcc_h1{
     border-top: 1px solid gray;
 }
