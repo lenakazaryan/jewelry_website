@@ -1,19 +1,28 @@
 import { useState, useEffect } from "react";
 import styles from "./Dropdown.module.css";
 import arrowLogo from "../../assets/images/arrow.png";
-import Categories from "../Shop/Categories/Categories";
 
-function Dropdown({ Component }) {
+function Dropdown({ Component, title }) {
   const [isOpen, setIsopen] = useState(false);
 
-  const toggle = () => setIsopen((prev) => !prev);
+  const toggle = () => {
+    setIsopen((prev) => !prev);
+  };
 
   return (
-    <div>
-      <button onClick={toggle}>
-          <img className={styles.arrowLogo} src={arrowLogo}/></button>
-      {isOpen ? <Categories /> : null}
-    </div>
+    <>
+      <div onClick={toggle} className={styles.dropdownContainer}>
+        <p>{title}</p>
+        <img
+          className={`${styles.arrowLogo} ${isOpen && styles.logoRotate}`}
+          src={arrowLogo}
+        />
+      </div>
+      <div className={`${styles.classToggle} ${isOpen && styles.opened}`}>
+        <span className={styles.line}></span>
+        <Component />
+      </div>
+    </>
   );
 }
 

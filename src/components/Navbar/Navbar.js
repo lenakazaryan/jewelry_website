@@ -1,25 +1,32 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { navLinks } from "../../helpers/constants";
+import { useDispatch, useSelector } from "react-redux";
+import { routeAction } from "../redux/action";
 
 function Navbar() {
-  const [activeTab, setActiveTab] = useState("HOME");
+  const {route} = useSelector(({routeReducer}) => routeReducer);
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.navbarContainer}>
       <ul className={styles.navbarList}>
-        {navLinks.map((link) => {
+        {navLinks.map(link => {
+          const {name, to } = link
           return (
-            <li key={link.name} onClick={() => setActiveTab(link.name)}>
+            <li
+              key={name}
+              onClick={() => dispatch(routeAction(name))}
+            >
               <NavLink
                 className={
-                  activeTab === link.name
+                  route === link.name
                     ? styles.navlink_active
                     : styles.navlink
                 }
-                to={link.to}
+                to={to}
               >
-                {link.name}
+                {name}
               </NavLink>
             </li>
           );

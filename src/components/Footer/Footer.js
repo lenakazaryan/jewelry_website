@@ -1,14 +1,16 @@
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { footerLinks } from "../../helpers/constants";
 import styles from "./Footer.module.css";
-import { useState } from "react";
 import fbLogo from "../../assets/images/fb.png";
 import linkdinlogo from "../../assets/images/linkdin.png";
 import twitterLogo from "../../assets/images/twitter.png";
 import { addingInformation } from "../../helpers/constants";
+import { useDispatch, useSelector } from "react-redux";
+import { routeAction } from "../redux/action";
 
 function Footer() {
-  const [activeTab, setActiveTab] = useState("ACC");
+  const { route } = useSelector(({ routeReducer }) => routeReducer);
+  const dispatch = useDispatch();
   return (
     <div className={styles.footerContainer}>
       <div>
@@ -27,10 +29,13 @@ function Footer() {
         <ul className={styles.footerList}>
           {footerLinks.map((link) => {
             return (
-              <li key={link.name} onClick={() => setActiveTab(link.name)}>
+              <li
+                key={link.name}
+                onClick={() => dispatch(routeAction(link.name))}
+              >
                 <NavLink
                   className={
-                    activeTab === link.name
+                    route === link.name
                       ? styles.footer_active
                       : styles.footerlink
                   }
@@ -45,10 +50,13 @@ function Footer() {
         <ul className={`${styles.footerList} ${styles.footerList_lastPart}`}>
           {addingInformation.map((link) => {
             return (
-              <li key={link.name} onClick={() => setActiveTab(link.name)}>
+              <li
+                key={link.name}
+                onClick={() => dispatch(routeAction(link.name))}
+              >
                 <NavLink
                   className={
-                    activeTab === link.name
+                    route === link.name
                       ? styles.footer_active
                       : styles.footerlink
                   }
