@@ -1,0 +1,84 @@
+.contact2 {
+
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    height: 900px;
+    justify-content: space-between;
+    grid-template-areas: "t s";
+}
+
+.contact2_text {
+    grid-area: t;
+    margin-right: 500px;
+}
+
+.contact3_text {
+    grid-area: s;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.contact2_h2 {
+    margin-right: 200px;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.contact_inp {
+    width: 300px !important;
+    height: 50px !important;
+    border-style: ridge !important;
+    border-bottom-color: #797777 !important;
+
+
+}
+
+.contactUs_btn {
+    background-color: rgb(206, 164, 146) !important;
+    border: none !important;
+    color: white !important;
+    padding: 20px 62px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: block!important;
+    font-size: 15px !important;
+    margin: 10px 100px !important ;
+    transition-duration: 0.4s !important;
+    cursor: revert !important;
+
+}
+
+.contactUs_btn:hover {
+
+    background-color: black !important;
+    color: white !important;
+}
+
+.contactH2 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.contact2_h3 {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.contact3_h3 {
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.contact2_h1 {
+    font-style: italic;
+    margin-top: 2px;
+
+}
+
+.contact2_h4 {
+    font-style: italic;
+    font-size: 23px;
+    display: flex;
+    margin-left: 70px;
+}

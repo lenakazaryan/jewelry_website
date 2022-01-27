@@ -7,7 +7,6 @@ import { popularProducts } from '../../helpers/constants';
 import imagesInfo from './LinkedImgSection/data';
 
 
-
 function Home() {
   return (
     <>

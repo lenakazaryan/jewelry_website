@@ -1,0 +1,176 @@
+/*photo1*/
+.InspirationMain {
+    display: flex;
+    justify-content: center;
+    width: 1300px;
+    height: 100%;
+    margin: auto;
+}
+
+.statePhoto1 {
+    position: relative;
+    width: 50%;
+    height: 1005px;
+    cursor: pointer;
+    transition: height 1s;
+    display: flex;
+    padding-right: 250px;
+    padding-top: 90px;
+
+}
+
+.statePhoto1:hover {
+    height:980px   ;
+    transition: height 1s;
+
+}
+
+
+.stateText1 {
+    width: 50%;
+    text-align: center;
+    padding-right: 1px !important;
+    padding-top: 450px;
+    white-space: pre;
+    font-size: 15px;
+    font-weight: initial;
+    white-space: pre;
+
+
+}
+
+/*photo2-3 */
+.InspirationMain2 {
+    margin-top: 100px;
+    display: flex;
+    width: 100px;
+    height: 1200px;
+    justify-content: space-between;
+    margin-left: 250px;
+    white-space: pre;
+
+
+}
+
+
+.statePhoto2 {
+    display: flex;
+
+    width: 800px;
+    height: 1000px;
+    background-size: 800px;
+    margin-top: 160px;
+    transition: height 1s;
+
+}
+
+.statePhoto3 {
+    display: flex;
+    height: 540px;
+    width:500px ;
+    transition: height 1s;
+
+}
+.statePhoto2:hover{
+    height: 970px;
+    transition: height 1s;
+}
+.statePhoto3:hover{
+    height: 500px;
+    transition: height 1s;
+}
+/*photo4-5*/
+.InspirationMain3{
+    display: flex;
+    margin: 200px 250px 200px 250px;
+    width: 200px;
+    height: 670px;
+
+    justify-content: revert;
+
+}
+
+.statePhoto4{
+    display: flex;
+    width: 600px;
+    height: 700px;
+    margin-top: 140px;
+    padding-right: 140px;
+
+}
+
+.statePhoto5{
+    width: 500px;
+    display: flex;
+    height: 950px;
+    transition: height 1s;
+}
+
+.statePhoto5:hover{
+    height: 910px;
+    transition: height 1s;
+}
+
+/*photo6*/
+.InspirationMain4{
+    display: flex;
+    margin-top: 500px;
+    margin-left: 250px;
+    height: 1000px;
+    white-space: pre;
+    text-align: start;
+    font-style: unset;
+    justify-content: space-between;
+
+
+}
+.statePhoto6{
+    width: 800px;
+    display: flex;
+    height: 780px;
+    transition:height 1s;
+
+}
+.statePhoto6:hover{
+    height: 760px;
+    transition: height 1s
+}
+
+/*photo7-8*/
+.InspirationMain5{
+    display: flex;
+    margin-top: 50px;
+    width: 200px;
+    margin-left: 250px ;
+    white-space: pre;
+    text-align: start;
+    height: 1400px;
+
+
+
+}
+
+.statePhoto7{
+
+    width: 500px;
+    display:flex;
+    height: 780px;
+    padding-right: 130px ;
+    margin-top: 200px ;
+    transition:height 1s ;
+}
+.statePhoto8{
+    width: 900px;
+    display: flex;
+    height: 1200px;
+    padding-left: 100px !important;
+    transition:height 1s ;
+}
+.statePhoto7:hover{
+    transition:height 1s;
+    height: 760px;
+}
+.statePhoto8:hover{
+    transition: height 1s;
+    height: 1100px;
+}

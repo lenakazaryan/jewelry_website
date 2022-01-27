@@ -1,7 +1,12 @@
 import React from 'react';
 import './ProductCard.css';
+import { useGlobalContext } from '../../helpers/bucketContext';
 
-function ProductCard({name, image, price}) {
+function ProductCard({...products}) {
+  const {name, image, price} = products;
+  const { isAdded, addProductToBucket }= useGlobalContext();
+
+
   return (
     <article className="main_product_card">
         <a href="#" className="main_product_card_container">
@@ -9,8 +14,15 @@ function ProductCard({name, image, price}) {
                 <img src={image} alt={name} />
             </div>
         </a>
-        <a href="#" className="main_product_add_btn white-text"> Add to card</a>
-        <a className="main_card_name" href="#">{name.length <= 32 ? name : name.slice(0,32) + '...'}</a>
+
+        {
+          isAdded ? <div className="main_product_add_btn white-text" >Added</div> : 
+            <div className="main_product_add_btn white-text" 
+                onClick={()=>{addProductToBucket(products)}}>Add to card 
+            </div>
+        }
+  
+        <a className="main_card_name" href="#">{name.length <= 15 ? name : name.slice(0,32) + '...'}</a>
         <p><span>$</span> <span>{price}</span></p>
     </article>
   )

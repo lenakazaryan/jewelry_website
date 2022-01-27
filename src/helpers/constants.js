@@ -106,6 +106,7 @@ export const bestSellerProducts = [
     price: '330.00',
   },
 ]
+
 export const addingInformation = [
   {
     to: "policyprivacy",
