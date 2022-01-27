@@ -1,7 +1,7 @@
 .shopCategoriesTypes {
-  text-align: start;
+  text-align: start !important
 }
 
 .shopCategoriesTypes > div {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important
 }

@@ -7,7 +7,7 @@ import SortBy from "../SortBy/SortBy";
 
 function ShopItem() {
   const dispatch = useDispatch();
-  const jewelryData = useSelector((state) => state.getJewelryReducer?.jewelry);
+  const {jewelry} = useSelector(({getJewelryReducer}) => getJewelryReducer);
   const [isOpen, setIsopen] = useState(false);
 
   useEffect(() => {
@@ -30,8 +30,8 @@ function ShopItem() {
       </div>
       <div className={styles.shopBlocksContainer}>
         <div className={styles.shopItemsList}>
-          {jewelryData &&
-            jewelryData.map((item) => {
+          {
+            jewelry.map((item) => {
               return (
                 <div key={item.id}>
                   <img className={styles.shopItemsImages} src={item.img} />

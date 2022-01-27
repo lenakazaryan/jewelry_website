@@ -21,7 +21,7 @@ export const routeAction = (payload) => {
   };
 };
 
-export const filterAction = (payload) => {
+export const setCategory = (payload) => {
   return {
     type: FILTER_JEWELRY,
     payload,
