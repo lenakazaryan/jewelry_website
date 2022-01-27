@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@400;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/*---------------------------------------------------
+webkit-scrollbar
+---------------------------------------------------*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d5d5d5;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0px 0px 2px #c8c8c8;
+    box-shadow: inset 0px 0px 2px #c8c8c8;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #e5e5e5;
+}
+
+
+/* ---------------------------------------------------
+SELECT TEXT
+---------------------------------------------------*/
+
+::-moz-selection {
+    color: #000;
+    background: #cea492;
+}
+
+::selection {
+    color: #000;
+    background: #cea492;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.main_link {
+    color: #cea492;
+}
+
+.main_link:hover {
+    color: #ecc6b6;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.main_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 810px) {
+    .main_container {
+        width: 100%;
+    }
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.modal_close_btn {
+    position: absolute !important;
+    right: 20px !important;
+    top: 20px;
+}
+
+.indicator-item.active {
+    background: #33333390 !important;
+}
+
+.indicator-item {
+    width: 12px !important;
+    height: 12px !important;
+    background: silver;
+}
+
+.carousel_container {
+    position: relative;
+}
+
+.carousel_prev_next {
+    position: absolute;
+    top: 47%;
+    cursor: pointer;
+}
+
+.carousel_previous_btn {
+    left: 0;
+}
+
+.carousel_next_btn {
+    right: 0;
 }
