@@ -1,15 +1,13 @@
 import {
   GET_JEWELRY,
   SEARCH_JEWELRY,
-  SET_CATEGORY,
   SET_FILTER_VALUE,
+  FILTER_JEWELRY,
 } from "../actionType";
 
 const initialState = {
   initialItems: [],
   jewelry: [],
-  filteredByCategories: [],
-  filteredBySearch: [],
   categories: [],
   searchValue: "",
 };
@@ -29,7 +27,7 @@ export const jewelryReducer = (state = initialState, { type, payload }) => {
         jewelry: payload,
       };
 
-    case SET_CATEGORY:
+    case FILTER_JEWELRY:
       let filters = [...state.categories];
       let copyItems = [...state.initialItems];
       const result = [];
