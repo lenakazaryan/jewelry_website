@@ -8,8 +8,6 @@ import {
 const initialState = {
   initialItems: [],
   jewelry: [],
-  filteredByCategories: [],
-  filteredBySearch: [],
   categories: [],
   searchValue: "",
 };

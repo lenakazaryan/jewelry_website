@@ -30,13 +30,6 @@ function Categories() {
   function showTypes(e) {
     dispatch(setCategory(e.target.name));
   }
-  // if(e.target.checked !== checked){
-  //   dispatch(filterAction(e.target.name))
-  //   console.log("checked")
-  // }
-  // else{
-  //   console.log("not")
-  // }
 
   return (
     <div>
@@ -44,8 +37,10 @@ function Categories() {
         {inputCategories.map(({ id, title }) => {
           return (
             <div key={id}>
-              <input onChange={showTypes} type="checkbox" id={id} name={id} />
-              <label htmlFor="bracelets">{title}</label>
+              <label>
+                <input onChange={showTypes} type="checkbox" id={id} name={id} />
+                <span>{title}</span>
+              </label>
             </div>
           );
         })}
