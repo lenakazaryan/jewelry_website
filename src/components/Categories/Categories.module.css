@@ -4,10 +4,7 @@
 
 .shopCategoriesTypes > div {
   margin-bottom: 30px !important;
+  text-align: start !important
 }
 
-/* [type="checkbox"] {
-  position: initial !important;
-  opacity: 1 !important;
-  pointer-events: all !important;
-} */
+
