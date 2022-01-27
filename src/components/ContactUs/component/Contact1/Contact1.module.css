@@ -1,0 +1,20 @@
+.contact1{
+    width: 1900px;
+    height: 200px;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 700px;
+    margin-top: 10px;
+}
+.contact1_right {
+    background-image: url("../../../../assets/images/contactUs1.png");
+    width: 2200px;
+    height: 1000px;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    background-position:center;
+}
