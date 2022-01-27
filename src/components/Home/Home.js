@@ -6,7 +6,6 @@ import { bestSellerProducts } from '../../helpers/constants';
 import { popularProducts } from '../../helpers/constants';
 
 
-
 function Home() {
   return (
     <>

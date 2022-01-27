@@ -6,12 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./components/redux/store";
+import { AppProvider} from './bucketContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <App />
+        <AppProvider>
+          <App />
+        </AppProvider>
       </Router>
     </Provider>
   </React.StrictMode>,
