@@ -13,7 +13,7 @@ function ShopFilters() {
     setIsopen((prev) => !prev);
   };
   return (
-    <div className={styles}>
+    <div >
       {/* <img
         onClick={toggle}
         src={arrowLogo}
