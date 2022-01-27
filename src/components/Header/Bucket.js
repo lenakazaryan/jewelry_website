@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import bucket from '../../assets/images/bucket.png';
 import BucketProductItem from './BucketProductItem';
-import { useGlobalContext } from '../../bucketContext';
+import { useGlobalContext } from '../../helpers/bucketContext';
 
 
 function Bucket() {
