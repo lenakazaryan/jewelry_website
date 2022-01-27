@@ -1,5 +1,5 @@
 import React from 'react';
-import { useGlobalContext } from '../../bucketContext';
+import { useGlobalContext } from '../../helpers/bucketContext';
 
 function BucketProductItem({...products}) {
     const {image, name, quantity, price} = products;
