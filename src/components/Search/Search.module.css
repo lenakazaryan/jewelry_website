@@ -14,13 +14,41 @@
   margin-right: 5px;
 }
 
-.searchContainer {
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.searchContainer{
+    border: 1px solid #ddd;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+
 }
 
-.searchContainer > input {
-  border: none;
+.shopSearchInput {
+    height: 100% !important;
+    border: none !important;
+    margin: 0 !important;
+    padding-left: 35px !important;
+    font-size: 13px !important;
 }
+
+.searchIcon {
+    color:  #000;
+    position: absolute;
+    left:15px;
+    font-size: 13px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+
+}
+
+.shopSearchInput:focus {
+    border:none !important;
+    /* border: 1px solid #ddd !important; */
+ 
+
+    box-shadow: none !important;
+}
+
+

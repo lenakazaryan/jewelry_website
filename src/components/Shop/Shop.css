@@ -1,0 +1,17 @@
+.shopSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop_section_container {
+  width: 85%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+@media screen and (max-width: 800px){
+  .shop_section_container {
+    flex-direction: column;
+  }
+}

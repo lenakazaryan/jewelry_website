@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import styles from "../Categories/Categories.module.css";
+import './Categories.css'
+import {filterAction} from "../redux/action";
 import { setCategory } from "../redux/action";
 
 const inputCategories = [
@@ -33,7 +34,8 @@ function Categories() {
 
   return (
     <div>
-      <div className={styles.shopCategoriesTypes}>
+
+      <div className='shopCategoriesTypes'>
         {inputCategories.map(({ id, title }) => {
           return (
             <div key={id}>

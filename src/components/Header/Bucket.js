@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import bucket from '../../assets/images/bucket.png';
 import BucketProductItem from './BucketProductItem';
-import { useGlobalContext } from '../../helpers/bucketContext';
+import { useGlobalContext } from '../../bucketContext';
 
 
 function Bucket() {
@@ -46,7 +46,7 @@ function Bucket() {
                                     <p className="right bold"><span>$</span> <span>{totalPrice}</span></p>
                                 </div>
                             </div>
-                            <p className='left'>Looking for more? <Link to='./Shop' className="main_link">Continue shopping</Link></p> 
+                            <p className='left'>Looking for more? <Link to='./Shop' className="modal-close main_link">Continue shopping</Link></p> 
                         </>
                         : <p className="center">Your shopping cart is empty</p>            
                     }
