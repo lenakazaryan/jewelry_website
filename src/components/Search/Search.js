@@ -18,7 +18,6 @@ function Search() {
   useEffect(() => {
     clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
-      console.log("lll");
       dispatch(setFilterValue(searchValue));
     }, 400);
   }, [searchValue]);

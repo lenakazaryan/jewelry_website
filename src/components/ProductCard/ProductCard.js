@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProductCard.css';
 import { useGlobalContext } from '../../bucketContext';
 
 function ProductCard({...products}) {
   const {name, img, price, description} = products;
-  const { isAdded, addProductToBucket }= useGlobalContext();
+  const [isAdded, setIsAdded]= useState(false)
+  const { addProductToBucket }= useGlobalContext();
 
+  const addProduct = () =>{
+    if(!isAdded){
+      setIsAdded(!isAdded);
+      const timeout =  setTimeout(()=>{
+            setIsAdded(isAdded);
+        }, 2000);
+        return ()=> clearTimeout(timeout)
+    }
+    setIsAdded(!isAdded)
+  }
 
   return (
     <article className="main_product_card">
@@ -14,11 +25,13 @@ function ProductCard({...products}) {
                 <img src={img} alt={name} />
             </div>
         </div>
-
         {
           isAdded ? <div className="main_product_add_btn white-text" >Added</div> : 
             <div className="main_product_add_btn white-text" 
-                onClick={()=>{addProductToBucket(products)}}>Add to card 
+                onClick={()=>{
+                  addProductToBucket(products);
+                  addProduct();
+                }}>Add to card 
             </div>
         }
 

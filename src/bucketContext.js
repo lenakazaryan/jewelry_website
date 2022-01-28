@@ -50,18 +50,6 @@ const AppProvider = ({ children }) => {
         return item;
       }))
     }
-
-    const addBucketList = () => {
-      if(!isAdded) {
-          setIsAdded(!isAdded);
-          const timeout =  setTimeout(()=>{
-              setIsAdded(isAdded);
-          }, 2000);
-          return ()=> clearTimeout(timeout)
-      }
-      setIsAdded(!isAdded);
-    };
-
     
   const addProductToBucket = ({...products})=>{
       const addedProduct = list.find(item => item.name === products.name);
@@ -70,7 +58,6 @@ const AppProvider = ({ children }) => {
         addQuantity(products.name)
       } else {
           const addedProduct = {...products, quantity: 1}
-          addBucketList();
           setList([...list, addedProduct])
       }
   }
@@ -89,7 +76,6 @@ const AppProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         isAdded,
-        addBucketList,
         productsQuantity,
         addProductToBucket,
         removeProductFromBucket,

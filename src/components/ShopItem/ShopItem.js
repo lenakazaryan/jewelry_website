@@ -26,7 +26,7 @@ function ShopItem() {
           {
             jewelry.map((product) => {
               return (
-                <ProductCard {...product} />
+                <ProductCard  key = {product.id} {...product} />
               );
             })}
         </div>
