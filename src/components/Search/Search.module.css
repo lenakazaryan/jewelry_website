@@ -7,11 +7,11 @@
     display: inline-block;
   }
 
-  .searchImg{
-      background-color: red;
-      width: 20px;
-      height: 20px;
-      margin-right: 5px;
+.searchImg {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 .searchContainer{

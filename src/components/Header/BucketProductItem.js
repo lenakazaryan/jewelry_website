@@ -2,7 +2,7 @@ import React from 'react';
 import { useGlobalContext } from '../../bucketContext';
 
 function BucketProductItem({...products}) {
-    const {image, name, quantity, price} = products;
+    const {img, name, quantity, price} = products;
     const {removeProductFromBucket, addQuantity, extractQuantity} = useGlobalContext()
 
   return (
@@ -10,7 +10,7 @@ function BucketProductItem({...products}) {
         <div className="bucket_product">
             <div className="bucket_product_image_container">
                 <div className="bucket_product_image">
-                    <img src={image} alt="product image" />
+                    <img src={img} alt="product image" />
                 </div>
             </div>
             <div className="bucket_product_name">

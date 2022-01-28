@@ -18,7 +18,6 @@ const AppProvider = ({ children }) => {
     const [productsQuantity, setProductsQuantity] = useState(0);
     const [totalPrice, settotalPrice] = useState(0);
 
-
     const productQuantityCalculator = () =>{
       return list.reduce((sum, {quantity})=>{
             return sum + quantity;

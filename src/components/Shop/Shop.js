@@ -5,8 +5,8 @@ import Filter from "../Filters/Filters"
 
 function Shop() {
   return (
-    <section>
-      <div className="container shop_section_container">
+    <section className="shopSection">
+      <div className="shop_section_container">
         <ShopFilters />
         <ShopItem />
       </div>

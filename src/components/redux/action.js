@@ -1,4 +1,4 @@
-import { GET_JEWELRY, SEARCH_JEWELRY, SET_ROUTE, FILTER_JEWELRY } from "./actionType";
+import { GET_JEWELRY, SEARCH_JEWELRY, SET_ROUTE, SET_CATEGORY, SET_FILTER_VALUE } from "./actionType";
 
 export const getJewelryAction = (payload) => {
   return {
@@ -21,9 +21,16 @@ export const routeAction = (payload) => {
   };
 };
 
-export const filterAction = (payload) => {
+export const setCategory = (payload) => {
   return {
-    type: FILTER_JEWELRY,
+    type: SET_CATEGORY,
+    payload,
+  };
+};
+
+export const setFilterValue = (payload) => {
+  return {
+    type: SET_FILTER_VALUE,
     payload,
   };
 };
