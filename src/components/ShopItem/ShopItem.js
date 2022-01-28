@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getJewelryAction } from "../redux/action";
 import styles from "../ShopItem/ShopItem.module.css";
 import SortBy from "../SortBy/SortBy";
-
+import ProductCard from "../ProductCard/ProductCard";
 
 function ShopItem() {
   const dispatch = useDispatch();
@@ -48,3 +48,6 @@ function ShopItem() {
 }
 
 export default ShopItem;
+
+
+ 

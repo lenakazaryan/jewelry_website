@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import styles from "../Categories/Categories.module.css";
+import './Categories.css'
+// import styles from "../Categories/Categories.module.css";
  import {filterAction} from "../redux/action";
 
 
@@ -41,10 +42,13 @@ function Categories() {
 
   return (
     <div>
-      <div className={styles.shopCategoriesTypes}>
+      <div className='shopCategoriesTypes'>
         <div>
-          <input onChange={showTypes}  type="checkbox" id="bracelets" name="bracelets" />
-          <label htmlFor="bracelets">Bracelets</label>
+          <label >
+             <input onChange={showTypes}  type="checkbox" id="bracelets" name="bracelets" />
+             <span>Bracelets</span>
+          </label>
+        
         </div>
         <div>
           <input onChange={showTypes}  type="checkbox" id="earrings" name="earrings" />

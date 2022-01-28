@@ -1,0 +1,4 @@
+.shop_section_container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -3,7 +3,7 @@ import Categories from "../Categories/Categories";
 import Search from "../Search/Search";
 import arrowLogo from "../../assets/images/arrow.png";
 import { useState } from "react";
-import styles from "../Shop/Shop.module.css";
+import './ShopFilters.css'
 import Price from  "../Price/Price";
 
 function ShopFilters() {
@@ -13,7 +13,7 @@ function ShopFilters() {
     setIsopen((prev) => !prev);
   };
   return (
-    <div className={styles}>
+    <div>
       {/* <img
         onClick={toggle}
         src={arrowLogo}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductCard.css';
-import { useGlobalContext } from '../../helpers/bucketContext';
+import { useGlobalContext } from '../../bucketContext';
 
 function ProductCard({...products}) {
   const {name, image, price} = products;

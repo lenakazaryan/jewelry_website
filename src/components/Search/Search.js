@@ -37,15 +37,21 @@ function Search() {
 
   return (
     <div>
+           <div>
       <div className={styles.searchContainer}>
-        <img className={styles.searchImg} src={logo} />
         {/* <input type="text" placeholder="Search..." name="search" /> */}
-        <input
-          type="text"
-          value={searchValue}
-          placeholder="Search"
-          onChange={changeHandler}
-        />
+          <div className={styles.searchIcon}>
+            <i class="fas fa-search"></i>
+          </div>
+          <input
+            className={styles.shopSearchInput}
+            type="text"
+            value={searchValue}
+            placeholder="Search"
+            onChange={changeHandler}
+          />
+
+        </div>
       </div>
     </div>
   );
