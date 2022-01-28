@@ -1,14 +1,13 @@
 import React from 'react';
 import './LinkedImgSection.css';
 import LinkedImageCard from '../../ImageCards/LinkedImageCard';
-import imagesInfo from './data';
 
-function LinkedImgSection() {
+function LinkedImgSection({data}) {
     return (
         <section>
             <div className="main_linked_section_container">
                 {
-                    imagesInfo.map((img, index)=>{
+                    data.map((img, index)=>{
                         return (
                             <LinkedImageCard key={index} {...img} /> 
                         )

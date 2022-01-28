@@ -1,0 +1,39 @@
+/* Styles row 2 */
+.acc h1,p{
+   text-align: start;
+}
+
+.acc{
+    margin-top: 50px;
+   display: flex;
+   height: 1150px;
+   justify-content: space-around;
+   padding: 0px 120px 0px;
+   width: inherit;
+}
+.img_description_card{
+   display: flex;
+   
+
+}
+.accCard{
+   width: 400px;
+}
+
+.photoWidth{
+   width: 400px;
+   height: 450px;
+   background-size: 400px;
+   background-position:center ;
+   background-repeat: no-repeat;
+   transition: background-size 1s;
+}
+.photoWidth:hover{
+   background-size: 450px;
+}
+
+
+.history_right_image{
+   margin-top: 350px;
+}
+

@@ -1,0 +1,35 @@
+.headerAcc{
+    margin-top: 100px;
+    display: flex;
+    height: 800px;
+    justify-content: space-between;
+    
+}
+
+.headerAcc_text{
+    width: 40%;
+    text-align: start;
+    padding-left: 100px;
+    padding-top: 300px;
+
+}
+.headerAcc_photo{
+    position: relative;
+    background: url("../../../assets/images/Acc_1.jpg") no-repeat center;
+    background-size:650px;
+    width: 46%;
+    height: 800px;
+    cursor: pointer;
+    transition: background-size 1s;
+    
+}
+.headerAcc_photo:hover{
+    z-index: 2;
+    background-size: 750px;
+    width: 46%;
+    
+}
+
+.Acc_headerAcc_h1{
+    border-top: 1px solid gray;
+}
